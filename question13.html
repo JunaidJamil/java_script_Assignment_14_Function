@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 13. Write a JavaScript function that accepts two arguments, a
+// string and a letter and the function will count the number of
+// occurrences of the specified letter within the string.
+// Sample arguments : 'JSResourceS.com', 'o'
+
+document.write("<h1>Question 13</h1>")
+
+function countOccurrences(str, letter) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str.charAt[i] == letter) {
+      count++;
+    }
+  }
+  return count;
+}
+
+let str = 'JSResourceS.com';
+let letter = 'o';
+let numOccurrences = countOccurrences(str, letter);
+document.write(`The letter '${letter}' occurs ${numOccurrences} times in the string '${str}'`);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

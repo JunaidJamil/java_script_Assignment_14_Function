@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 8. Write a nested function that computes hypotenuse of a
+// right angle triangle.
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+
+document.write("<h1>Question 8</h1>")
+
+
+
+function calculateHypotenuse(base, perpendicular) {
+  function calculateSquare(x) {
+    return x * x;
+  }
+
+  const baseSquare = calculateSquare(base);
+  const perpendicularSquare = calculateSquare(perpendicular);
+  const hypotenuseSquare = baseSquare + perpendicularSquare;
+  const hypotenuse = Math.sqrt(hypotenuseSquare);
+  return hypotenuse;
+}
+
+const base = 3;
+const perpendicular = 4;
+const hypotenuse = calculateHypotenuse(base, perpendicular);
+document.write(`The hypotenuse of a right triangle with base ${base} and perpendicular ${perpendicular} is ${hypotenuse}`);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

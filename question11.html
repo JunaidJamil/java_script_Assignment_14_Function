@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 11. Write a JavaScript function that accepts a string as a
+// parameter and converts the first letter of each word of the
+// string in upper case.
+// EXAMPLE STRING : 'the quick brown fox'
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+
+document.write("<h1>Question 11</h1>")
+
+
+function titleCase(str) {
+ 
+  let words = str.split(' ');
+
+ 
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+  }
+
+  
+  return words.join(' ');
+}
+
+let k= titleCase ("the quick brown fox")
+document.write(k)
+
+
+
+</script>
+</body>
+</html>
